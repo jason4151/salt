@@ -2,13 +2,13 @@ version: 0.0
 os: linux
 files:
   - source: master.d/
-    destination: /tmp/salt/
+    destination: /tmp/salt/master.d/
   - source: minion.d
-    destination: /tmp/salt/
+    destination: /tmp/salt/minion.d/
   - source: pillars/
-    destination: /tmp/salt/
+    destination: /tmp/salt/pillars/
   - source: states/
-    destination: /tmp/salt/ 
+    destination: /tmp/salt/states/
 hooks:
   ApplicationStart:
     - location: deploy_hooks/start_service.sh
