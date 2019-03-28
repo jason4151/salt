@@ -16,6 +16,6 @@ hooks:
   ApplicationStop:
     - location: deploy_hooks/stop_service.sh
       runas: root
-  ValidateService:
-    - location: deploy_hooks/verify_service.sh
-      runas: root
+  # ValidateService:
+  #   - location: deploy_hooks/verify_service.sh
+  #     runas: root
