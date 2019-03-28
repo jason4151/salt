@@ -1,0 +1,21 @@
+version: 0.0
+os: linux
+files:
+  - source: master.d/
+    destination: /tmp/salt/
+  - source: minion.d
+    destination: /tmp/salt/
+  - source: pillars/
+    destination: /tmp/salt/
+  - source: states/
+    destination: /tmp/salt/ 
+hooks:
+  ApplicationStart:
+    - location: deploy_hooks/start_service.sh
+      runas: root
+  ApplicationStop:
+    - location: deploy_hooks/stop_service.sh
+      runas: root
+  ValidateService:
+    - location: deploy_hooks/verify_service.sh
+      runas: root
