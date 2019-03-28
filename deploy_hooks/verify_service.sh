@@ -3,9 +3,9 @@
 # Deploy hooks are run via absolute path, so taking dirname of this script will give us the path to
 # our deploy_hooks directory.
 
-result=$(curl -s http://localhost/salt/index.html)
+systemctl status salt-master.service
 
-if [[ "$result" =~ "Hello World" ]]; then
+if [ $? -eq 0 ]; then
     exit 0
 else
     exit 1
