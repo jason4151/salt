@@ -10,7 +10,8 @@ httpd_install:
 httpd_service:
   service.running:
     - name: httpd
-    - reload: False
+    - enable: True
+    - reload: True
     - require:
       - pkg: httpd
     - watch:
