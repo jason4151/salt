@@ -14,5 +14,3 @@ httpd_service:
     - reload: True
     - require:
       - pkg: httpd_install
- #   - watch:
- #     - file: /etc/httpd/conf/httpd.conf
