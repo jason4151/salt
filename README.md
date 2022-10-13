@@ -1,7 +1,4 @@
 # Salt
-
-![SaltStack Logo](https://en.wikipedia.org/wiki/Salt_(software)#/media/File:SaltStack_logo_blk_2k.png)
-
 This repository utilizes the open source version of SaltStack (Salt for sort). AWS CodeDeploy is used for deploying the code to the Salt Master EC2 instances.
 
 Salt is a Python-based configuration management tool that was developed to bring the best solutions found in the world of remote execution together and make them better, faster, and more malleable. Salt is capable of maintaining remote nodes in defined states, i.e., ensuring that specific packages are installed, and specific services are running. The various services within the deployment are separated into functional roles so that they can be grouped within Salt’s State system. The Salt State system uses SLS, or **S**a**L**t **S**tate files. An SLS file represents the state in which a system should be in and is set up to contain this data in a simple format written in YAML.
