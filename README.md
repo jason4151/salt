@@ -1,6 +1,6 @@
 # Salt
 
-![SaltStack Logo](https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Saltstack_logo.png/320px-Saltstack_logo.png)
+![SaltStack Logo](https://en.wikipedia.org/wiki/Salt_(software)#/media/File:SaltStack_logo_blk_2k.png)
 
 This repository utilizes the open source version of SaltStack (Salt for sort). AWS CodeDeploy is used for deploying the code to the Salt Master EC2 instances.
 
